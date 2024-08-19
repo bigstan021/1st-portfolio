@@ -1,0 +1,161 @@
+/* HEADER AND FOOTER */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: rgb(135, 171, 8); /*green*/
+    --secondary-color: #7E74f1; /*purple*/
+    --footer-bg-color: rgb(220, 220, 220);
+    --background-color: rgb(248, 248, 248);
+}
+body{
+    background-color: var(--background-color);
+}
+main,section,footer{
+    margin-top: 14%;
+}
+h1, h5, h6{
+    color: var(--primary-color);
+}
+/* Navigation Bar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+    border-bottom: 1px solid rgb(228 228 228);
+}
+
+.logo{
+    display: flex;
+}
+.logo h3{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 8px;
+    font-family: sans-serif;
+}
+.navbar ul{
+    display: inline-flex;
+    
+}
+.navbar ul a{
+    margin-left: 50px;
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.resumebtn{
+    padding: 10px;
+    padding-left: 15px, 15px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    color: black;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.resumebtn:active {
+    transform: translateY(3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+.resumebtn::before {
+    content: url("images/download-solid.svg");
+    display: block;
+    width: 18px;
+    margin-right: 7px;
+    transition: transform 0.3s ease;
+}
+.resumebtn:active::before {
+    transform: translateY(3px);
+}
+
+/* Main */
+main{
+    display: flex;
+    justify-content: space-around;
+}
+.nameis{
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: #656d72;
+    font-weight: 500;
+
+}
+.name{
+    color: var(--primary-color);
+}
+.about-my-self::first-letter{
+    font-size: 1.5em;
+}
+
+.profpic{
+    position: relative;
+}
+.profpic img{
+    height: 250px;
+    width: 200px;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.picbox{ 
+    height: 250px;
+    width: 200px;
+    border-radius: 7px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    box-shadow: 1px 1px 3px var(--primary-color);
+}
+
+
+/* Footer */
+.pagen {
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.socialicons a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.socialicons a i{
+    margin-right: 20px;
+    color: black;
+}
+.socialicons p{
+    margin-top: 20px;
+}

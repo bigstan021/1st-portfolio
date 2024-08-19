@@ -1,0 +1,12 @@
+/* For mobile device */
+@media (max-width: 767px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

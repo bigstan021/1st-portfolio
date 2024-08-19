@@ -1,0 +1,61 @@
+/* SECTION_2 */
+
+/* CONTACT-LEFT-SIDE */
+.contact-name,.contact-email,.contact-textarea{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 7px;
+    border: none;
+}
+
+.contact-button{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    font-size: 16px;
+}
+.contact-button:hover{
+    background-color: #655DC1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+}
+.contact-button:active {
+    background-color: #4B48A5;
+    transform: scale(0.98);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+form{
+    width: 100%;
+}
+.Contact-GD{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    background-color: rgb(245, 245, 245);
+    padding: 100px;
+    margin-top: 25px;
+}
+
+/* CONTACT-RIGHT-SIDE */
+
+.address-container{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 25px;
+}
+.address-info{
+    font-size: small;
+}
+.address-title{
+    font-weight: 700;
+}
+.adjustment{
+    padding-top: 10%;
+}

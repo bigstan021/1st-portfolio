@@ -1,0 +1,41 @@
+/* SECTION_1*/
+.serviceis{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #656d72;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.speciality{
+    font-size: 35px;
+    /* color: #000000; */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.card-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around  ;
+}
+.sub-cdctn{
+    width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+.cardimgdiv{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.card1p{
+    text-align: center;
+    width:100%;
+    margin-top: 5px;
+    font-size:small;
+}
+.card1h5{
+    text-align: center;
+}
