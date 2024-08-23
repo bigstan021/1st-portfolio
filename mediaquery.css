@@ -15,31 +15,44 @@
     p {
         font-size: 14px;
     }
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
     h3{
         font-size: 18px;
     }
+    nav{
+        height: 10vh;
+    }
+    .logo{
+        margin-right: auto;
+    }
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
         position: fixed;
         top: 0;
         right: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
         z-index: 10;
-        background: var(--primary-color);
-        width: 50vw;
-        box-shadow: -5px 0 5px rgb(0, 0, 0.15);
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -2px 0 5px rgb(0, 0, 0.15);
         transition: 0.75s ease-out;
+        background-color: rgb(212, 209, 209);
     }
+    
     .navbar ul{
         flex-direction: column;
         line-height: 80px;
-    }
+        width: 100%;
+        height: 100vh
+}
     .navbar ul li {
-        padding: 20px 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar ul li a:hover{
+    background-color: grey;
     }
     .open-sidebar-button, .close-sidebar-button {
         padding: 20px;
@@ -49,17 +62,6 @@
         right: 0;
     }
 
-    #sidebar-active:checked ~ #overlay {
-        background: url(images/premium_photo-1678167657994-5b96138b6abb.avif);
-        background-size: cover;
-        background-position-y: 3px;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
-    }
     .profpic img {
         height: 150px;
         width: 150px;
@@ -68,11 +70,15 @@
         height: 150px;
         width: 150px;
     }
-    .Contact-GD {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 15px;
+    .Contact-GD{
+        display: block;
         padding: 40px;
+    }
+    .contact-right-side{
+        flex: 1;
+    }
+    .contact-left-side{
+        flex: 1;
     }
     .pagen {
         padding: 50px;
@@ -84,6 +90,6 @@
         font-size: 14px;
     }
     .adjustment{
-        padding-top: 21%;
+        padding-top: 18%;
     }
 }
