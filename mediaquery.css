@@ -15,8 +15,16 @@
     p {
         font-size: 14px;
     }
-    h3{
-        font-size: 18px;
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    main{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        column-gap: auto;
+        margin-left: 1.7vw;
+        /* margin-right: 1vw; */
     }
     nav{
         height: 10vh;
@@ -24,6 +32,16 @@
     .logo{
         margin-right: auto;
     }
+    .divname h1{
+        font-weight: 700;
+    }
+    .speciality{
+        font-size: large;
+    }
+    .serviceis{
+        font-size: medium;
+    }
+    
     .navbar {
         position: fixed;
         top: 0;
@@ -50,9 +68,6 @@
     .navbar ul li {
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-    .navbar ul li a:hover{
-    background-color: grey;
     }
     .open-sidebar-button, .close-sidebar-button {
         padding: 20px;

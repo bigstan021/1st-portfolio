@@ -13,7 +13,7 @@
 }
 body{
     background-color: var(--background-color);
-    padding-top: 23vh;
+    padding-top: 10vh;
 }
 main,section,footer{
     margin-top: 14%;
@@ -57,6 +57,10 @@ nav{
     margin-left: 8px;
     font-family: sans-serif;
 }
+.logo a {
+    text-decoration: none;
+    color: black;
+}
 .navbar {
     height: 100%;
     align-items: center;
@@ -79,6 +83,9 @@ nav{
 .navbar ul li{
     list-style-type: none;
 }
+.navbar ul li a:hover{
+    background-color: grey;
+}
 .button {
     display: flex;
     align-items: center;
@@ -97,6 +104,7 @@ nav{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-weight: 600;
 }
 .resumebtn:active {
     transform: translateY(3px);
