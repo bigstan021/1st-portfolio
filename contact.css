@@ -52,6 +52,7 @@ form{
 }
 .address-info{
     font-size: small;
+    text-align: left;
 }
 .address-title{
     font-weight: 700;

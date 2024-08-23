@@ -1,12 +1,89 @@
 /* For mobile device */
-@media (max-width: 767px) {
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+@media (max-width: 768px) {
+    body{
+        font-size: small;
     }
-    .nav-links li {
-        margin: 10px 0;
+    .logo h3{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 14px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        background: var(--primary-color);
+        width: 50vw;
+        box-shadow: -5px 0 5px rgb(0, 0, 0.15);
+        transition: 0.75s ease-out;
+    }
+    .navbar ul{
+        flex-direction: column;
+        line-height: 80px;
+    }
+    .navbar ul li {
+        padding: 20px 20px;
+    }
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .navbar {
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        background: url(images/premium_photo-1678167657994-5b96138b6abb.avif);
+        background-size: cover;
+        background-position-y: 3px;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    .profpic img {
+        height: 150px;
+        width: 150px;
+    }
+    .picbox {
+        height: 150px;
+        width: 150px;
+    }
+    .Contact-GD {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 15px;
+        padding: 40px;
+    }
+    .pagen {
+        padding: 50px;
+    }
+    .address-container{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        column-gap: 20px;
+        font-size: 14px;
+    }
+    .adjustment{
+        padding-top: 21%;
     }
 }

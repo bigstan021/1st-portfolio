@@ -13,12 +13,20 @@
 }
 body{
     background-color: var(--background-color);
+    padding-top: 23vh;
 }
 main,section,footer{
     margin-top: 14%;
 }
 h1, h5, h6{
     color: var(--primary-color);
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+
 }
 /* Navigation Bar */
 nav{
@@ -27,11 +35,13 @@ nav{
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    height: auto;
+    height: 15vh;
     padding: 20px;
     margin-top: 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 5;
     background-color: white;
     border-bottom: 1px solid rgb(228 228 228);
@@ -46,6 +56,10 @@ nav{
     font-weight: 800;
     margin-left: 8px;
     font-family: sans-serif;
+}
+.navbar {
+    height: 100%;
+    align-items: center;
 }
 .navbar ul{
     display: inline-flex;
@@ -65,7 +79,11 @@ nav{
 .navbar ul li{
     list-style-type: none;
 }
-
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .resumebtn{
     padding: 10px;
     padding-left: 15px, 15px;
@@ -114,7 +132,9 @@ main{
 .about-my-self::first-letter{
     font-size: 1.5em;
 }
-
+.divname {
+    width: 50vw;
+}
 .profpic{
     position: relative;
 }
@@ -148,9 +168,14 @@ main{
     display: flex;
     justify-content: center;
 }
+.socialicons h4 {
+    margin-left: 20px;
+    font-style: italic;
+}
 .socialicons a{
     text-decoration: none;
     margin-left: 20px;
+    
 }
 .socialicons a i{
     margin-right: 20px;
@@ -158,4 +183,5 @@ main{
 }
 .socialicons p{
     margin-top: 20px;
+    margin-left: 20px;
 }

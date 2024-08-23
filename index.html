@@ -21,7 +21,13 @@
                     <img src="images/Vector.svg" alt="logo" height="50px">
                     <h3>Stan</h3>
         </div>
+        <!-- checkbox for responsivness  -->
+        <input type="checkbox"  id="sidebar-active">
+        <label for="sidebar-active" id="overlay"></label>
         <div class="navbar">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
             <ul>
                 <li><a href="index.html" id="home"><i class="fi fi-sr-home"></i>Home</a></li>
                 <li><a href="#service" id="Services1"><i class="fi fi-sr-skill-user"></i>Services</a></li>
@@ -30,8 +36,12 @@
         </div>
         <div class="button">
             <a href="#">
-            <button class="resumebtn" download="sound and its applications[physics note].pdf"> Resume</button>
-        </a>
+            <button class="resumebtn" download="sound and its applications[physics note].pdf">Resume</button> 
+            </a>
+            
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
         </div>
     </nav>
 <!-- MAIN -->
@@ -39,8 +49,7 @@
         <div class="divname">
             <h2 class="nameis">&mdash;My Name is</h2><br>
                 <h1 class="name"><span style="color: black;">Stan</span> Lee.</span></h1><br>
-                <p class="about-my-self">Imma student studying web development and a tech enthusiast. <br>I have a passion for technology and love exploring new trends in the tech world.</p>
-                <br>
+                <p class="about-my-self">Imma student studying web development and a tech enthusiast.I have a passion for technology and love exploring new trends in the tech world.</p>
         </div>
         <div class="profpic" > 
             <img src="images/my_signature.jpg" alt="image">
@@ -145,12 +154,14 @@
 <!-- FOOTER -->
     <footer class="pagen">
         <div class="socialicons">
+            <h4>social media:</h4> <br>
             <a href="https://www.instagram.com/bigg_stann_/" target="_blank"><i class="fi fi-brands-instagram"></i></a>
             <a href="https://www.facebook.com/stanley.ifeanyi.5203577" target="_blank"><i class="fi fi-brands-facebook"></i></a>
             <a href="https://x.com/stanlo_classiq?s=21" target="_blank"><i class="fi fi-brands-twitter-alt"></i></a>
             <a href="#"><i class="fi fi-brands-github"></i></a>
             <a href="https://wa.me/+2348113451930?text=hello%20there!%20how%20are%20you?"><i class="fi fi-brands-whatsapp"></i></a>
-            <p>&copy; 2024 &#8211; Stan Lee. All rights reserved.</p>
+            
+            <p class="copywrite-info">&copy; 2024 &#8211; Stan <span style="color:  rgb(135, 171, 8);">Lee.</span> All rights reserved.</p>
         </div>
     </footer>
 </body>
